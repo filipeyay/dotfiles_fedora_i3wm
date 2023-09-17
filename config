@@ -60,7 +60,7 @@ exec xinput set-prop "ELAN071A:00 04F3:30FD Touchpad" "libinput Tapping Enabled"
 
 # App shortcut
 bindsym $mod+Shift+w exec /usr/bin/firefox
-bindsym $mod+Shift+n exec /usr/bin/pcmanfm
+bindsym $mod+Shift+n exec /usr/bin/thunar
 bindsym $mod+Shift+t exec /usr/bin/emacs
 bindsym $mod+Shift+m exec /usr/bin/thunderbird
 
@@ -69,9 +69,6 @@ bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
-
-# start dmenu (default program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -196,7 +193,7 @@ bindsym $mod+r mode "resize"
 # exec_always --no-startup-id picom -b (for default configuration)
  exec_always --no-startup-id picom --config ~/.config/picom.conf
 
-# keyboard layout (using portuguese and brazillian layouts)
+# keyboard layout (using portuguese and brazillian layouts in this example)
 exec "setxkbmap -layout pt,br"
 exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
@@ -210,12 +207,9 @@ exec --no-startup-id xset s 480 dpms 600 600 600
  exec no-startup-id /usr/bin/dunst
 # other way is ==> exec --no-startup-id dbus-launch /usr/bin/dunst
 
-# autotiling
-exec_always --no-startup-id autotiling
-
 # rofi config
-bindsym $mod+d exec --no-startup-id rofi -show drun # show apps
-bindsym $mod+Shift+e exec --no-startup-id rofi -show p -modi p:rofi-power-menu # power menu, to use it you need to have rofi-power-menu installed
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+e exec --no-startup-id rofi -show p -modi p:rofi-power-menu
 
 
 # color settings for bar and windows + i3blocks config #
@@ -250,6 +244,7 @@ bar {
 		    separator          #F6F7F9
 		    background         #1E2227
 		    statusline         #E5C07B
+#
 #                       border      bg           txt       indicator
 		focused_workspace   #1E2227     #61AFEF      #1E2227   #C678DD
 		active_workspace    #1E2227     #323842      #ABB2BF   #C678DD
