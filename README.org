@@ -1,0 +1,23 @@
+* My simple i3wm configuration for a Fedora post install.
+** Intruduction:
+ This is just a simple configuration for the i3 tiling window manager. I got tired of how Gnome works and tried to do my best to make a configuration that is simple, minimal and just works. Just keep in mind that I have only tested this on Fedora, but is so simple it should work on any distribution.
+
+* Dependecies:
+** To keep it simple and functional you must install:
+ * i3 (The tiling window manager)
+ * i3blocks (A bar with scripts)
+ * picom (A compositor to fix screen tearing)
+ * feh (To set cool wallpapers)
+ * rofi (To launch applications and launch power menu)
+ * dunst (Notification)
+ * A terminal emulator (Pick what you like the most, I use Alacritty)
+
+** My bloat:
+ * thunar (File manager)
+ * htop (System monitor)
+ * redshift (Night light)
+ * lxappearance (Change gtk and icon themes + Change applications fonts)
+ * Spacemacs (Text editor + Note taking with org-mode)
+ * mpv (Video player)
+ * rhythmbox (Music player)
+ * fille-roller (Archive manager (unzip ,unrar ,etc)
